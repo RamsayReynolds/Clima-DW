@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Clima</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body class="Centrar">
+    <header class="Title"> 
+        <h1> Clima por Coordenadas </h1>
+    </header>
+
+   <div class="Inputs"> 
+        <input placeholder="Latitud" type="number" id="lat" class="Input"> 
+        <input placeholder="Longitud" type="number" id="lon" class="Input">
+
+    </div>
+
+    <div class=ButtonGrid>
+        <button class="Buttons" onclick="getWeather()"> Consultar Clima </button> 
+    </div>
+
+    <div class="Result" id="resultado">
+        <h5 class="Centrar2"> RSRR</h5>
+    </div> 
+    <div class="TEC1"> 
+        <h5 class="TEC1"> TEC Campus Puebla </h5>
+    </div>
+
+    <div class="TEC2"> 
+        <h5 class="TEC2"> Latitud:19.0178502 </h5> <h5 class="TEC2"> Longitud:-98.2412449</h5>
+        
+    </div>
+
+    <script src="app.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
+</html>
