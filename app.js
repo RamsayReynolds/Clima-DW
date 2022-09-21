@@ -9,7 +9,9 @@ function getWeather() {
   $.getJSON("https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid=6a5dd171bd0da4aa70a6a118b486aec5",
     function(json) {
       console.log(json.weather[0].main);
+      console.log(json.name);
       $('#resultado').text(JSON.stringify(json.weather[0].main));
+      $('#name').text(JSON.stringify(json.name));
     }
   );
 }
